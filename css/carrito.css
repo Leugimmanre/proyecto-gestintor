@@ -1,0 +1,85 @@
+/* Estilos carrito y que desaparezca*/
+.carrito {
+    display: block;
+    height: auto;
+    margin-left: 110px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow-y: scroll;
+    opacity: 0.95;
+    visibility: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* X cerrar carrito */
+.cerrar-carrito {
+    width: 22px;
+    height: 22px;
+    /* border-radius: 15px; */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    /* background-color: red; */
+}
+
+.cerrar-carrito:hover {
+    background-color: rgb(247, 4, 4);
+}
+
+/* Títulos tabla */
+#lista-carrito th {
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+/* botón vaciar carrito */
+#vaciar-carrito {
+    display: block;
+    position: relative;
+    bottom: 4px;
+    margin-left: 5px;
+    width: 98%;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(224, 6, 35);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#vaciar-carrito:hover {
+    background-color: rgb(8, 8, 8);
+    color: rgb(252, 249, 249);
+}
+
+/* Estilo aparezca carrito */
+.mover-carrito {
+    visibility: visible;
+}
+
+.borrar-curso {
+    width: 22px;
+    height: 22px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}

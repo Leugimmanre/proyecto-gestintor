@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos PCI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;1,100&family=Comic+Neue:ital@1&family=Josefin+Sans:wght@500&family=Montserrat&family=Noto+Sans&family=Open+Sans:wght@500;800&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- ENCABEZADO -->
+        <header class="header">
+            <h2 id="title-header">Equipos PCI</h2>
+        </header>
+
+        <!-- MENU NAVEGACION -->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="#">gestión</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+                <li><a href="bsqueda.html">buscar</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- MENU IZQUIERDO -->
+        <section class="aside-left">
+            <!-- Logo -->
+            <div id="logo">
+                <a id="logo-link" href="index.html"><img id="img-logo" src="./assets/logo.jpg" alt=""></a>
+                <p>GESTINTOR</p>
+            </div>
+            <!-- Cuenta -->
+            <div id="cuenta">
+                <a href=""><img src="./assets/baseline_account_circle_white_24dp.png" alt=""></a>
+                <p>Miguel</p>
+            </div>
+
+            <hr id="aside-line">
+
+            <ul id="menu-left">
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a class="control-carrito" href="#">Carrito</a></li>
+            </ul>
+
+            <!-- Carrito desplegable -->
+            <hr id="aside-line">
+
+            <div class="carrito">
+                <table id="lista-carrito" class="formato-carrito">
+                    <thead>
+                        <tr>
+                            <th>Imágen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                            <th><button class="cerrar-carrito">X</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-dinámica"></tbody>
+                </table>
+                <button id="vaciar-carrito">vaciar carrito</button>
+
+            </div>
+
+        </section>
+
+        <!-- PRINCIPAL -->
+        <section class="main" id="lista-equipos">
+            <h1 id="title-main">Equipos de protección contra incendios</h1>
+
+            <!-- Equipo 1 -->
+            <div class="cards" id="card1">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor ABC 6Kg</h3>
+                    <img class="img-cards" src="./assets/abc6kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente1">Agente esxtintor: ABC</p>
+                    <p id="eficacia1">Eficacia: 27A 183B</p>
+                    <p id="fabricante1">Fabricante: FAEX</p>
+                    <p id="precio1">Precio: <span>35€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card1">
+                    <button class="btn-cards"  id="btn-card1" data-id="1">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <!-- Equipo 2 -->
+            <div class="cards" id="card2">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor AFFF 6Kg</h3>
+                    <img class="img-cards" src="./assets/agua.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente2">Agente esxtintor: AFFF</p>
+                    <p id="eficacia2">Eficacia: 13A 183B</p>
+                    <p id="fabricante2">Fabricante: FAEX</p>
+                    <p id="precio2">Precio: <span>45€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card2">
+                    <button class="btn-cards"  id="btn-card2" data-id="2">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <!-- Equipo 3 -->
+            <div class="cards" id="card3">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor CO2 5Kg</h3>
+                    <img class="img-cards" src="./assets/co25kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente3">Agente esxtintor: ABC</p>
+                    <p id="eficacia3">Eficacia: 34B</p>
+                    <p id="fabricante3">Fabricante: FAEX</p>
+                    <p id="precio3">Precio: <span>55€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+                <div id="boton-agregar-card3">
+                    <button class="btn-cards"  id="btn-card3" data-id="3">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <!-- Equipo 4 -->
+            <div class="cards" id="card4">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor ABC 6Kg</h3>
+                    <img class="img-cards" src="./assets/abc6kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente4">Agente esxtintor: ABC</p>
+                    <p id="eficacia4">Eficacia: 27A 183B</p>
+                    <p id="fabricante4">Fabricante: FAEX</p>
+                    <p id="precio4">Precio: <span>25€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card4">
+                    <button class="btn-cards"  id="btn-card4" data-id="4">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <!-- Equipo 5 -->
+            <div class="cards" id="card5">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor ABC 6Kg</h3>
+                    <img class="img-cards" src="./assets/abc6kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente5">Agente esxtintor: ABC</p>
+                    <p id="eficacia5">Eficacia: 27A 183B</p>
+                    <p id="fabricante5">Fabricante: FAEX</p>
+                    <p id="precio5">Precio: <span>95€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card5">
+                    <button class="btn-cards"  id="btn-card5" data-id="5">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+            <!-- Equipo 6 -->
+            <div class="cards" id="card6">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor ABC 6Kg</h3>
+                    <img class="img-cards" src="./assets/abc6kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente6">Agente esxtintor: ABC</p>
+                    <p id="eficacia6">Eficacia: 27A 183B</p>
+                    <p id="fabricante6">Fabricante: FAEX</p>
+                    <p id="precio6">Precio: <span>70€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card6">
+                    <button class="btn-cards"  id="btn-card6" data-id="6">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+
+            <!-- Equipo 7 -->
+            <div class="cards" id="card6">
+                <div class="cards-imgs" id="card-img1">
+                    <h3 class="card-title">Extintor ABC 6Kg</h3>
+                    <img class="img-cards" src="./assets/abc6kg.jpg" alt="">
+                    <h4 id="descripcion">Descripción</h4>
+                </div>
+
+                <div class="info">
+                    <p id="agente7">Agente esxtintor: ABC</p>
+                    <p id="eficacia7">Eficacia: 27A 183B</p>
+                    <p id="fabricante7">Fabricante: FAEX</p>
+                    <p id="precio7">Precio: <span>95€</span></p>
+                    <p>Caracteristicas:</p>
+                    <p>
+                        Los extintores más polivalentes son
+                        los que sirven para extinguir fuegos
+                        de tipo A, B, y C. De ahí que este tipo
+                        de extintor también se conozca popularmente
+                        como extintor de polvo abc. Están pensados
+                        para la extinción de fuegos provocados por
+                        material seco, por ejemplo, papel, cartón y,
+                        sobre todo, madera.
+                    </p>
+                </div>
+
+                <div id="boton-agregar-card7">
+                    <button class="btn-cards"  id="btn-card7" data-id="7">Agregar al carrito</button>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- MENU IZQUIERDO ASIDE -->
+        <aside class="aside">
+            <div id="to-do">Tareas</div>
+            <hr id="aside-line-right">
+        </aside>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+            <p id="footer">Footer</p>
+        </footer>
+
+    </div>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/equipos.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/*ESTILOS GENERALES*/
+/*Reset navegadores*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset flotados */
+.clear-fix {
+  float: none;
+  clear: both;
+}
+/* Fuentes de google*/
+/*
+Source Sans Pro:
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+} */
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* GRID */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  /* DFefinir grid*/
+  display: grid;
+  grid-template-columns: 110px auto 200px ;
+  grid-template-rows: 40px 40px auto 100px;
+  grid-template-areas:
+      'aside-left header header'
+      'aside-left nav-bar nav-bar'
+      'aside-left main aside'
+      'aside-left footer footer'
+  ;
+}
+
+.box, .box2 {
+  border: 1px solid red;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+}
+
+.aside-left {
+  grid-area: aside-left;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+/* MENU IZQUIERDO */
+.aside-left {
+  background-color: rgb(31, 29, 29);
+}
+
+/* MENU IZQUIERDO > LOGO img 110 x 80 */
+#img-logo {
+  opacity: 0.50;
+}
+
+#img-logo:hover {
+  opacity: 1;
+}
+
+#logo P {
+  text-align: center;
+  color: rgb(61, 60, 60);
+}
+/* MENU IZQUIERDO > LOGO LINEA */
+
+#aside-line {
+  color:  #333;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* MENU IZQUIERDO > CUENTA */
+
+#cuenta {
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+
+
+/* MENU IZQUIERDO > MENU */
+.aside-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aside-left ul li a {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.aside-left ul li a:hover {
+  cursor: pointer;
+  background-color: rgb(248, 245, 245);
+  color: black;
+  border-left: 5px solid rgb(35, 154, 233);
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #ccc;
+}
+#title-header {
+  margin-left: 10px;
+}
+
+#header-line {
+  width: 99%;
+  margin: 0 auto;
+}
+
+
+/* BARRA DENAVEGACIÓN */
+
+.nav-bar {
+  text-align: right;
+}
+
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+}
+
+.nav-bar ul li a {
+  display: block;
+  margin-top: 8px;
+  width: 70px;
+  padding: 0 20px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 400ms;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+}
+
+
+.nav-bar ul li a:hover {
+  /* background-color: rgb(230, 247, 215); */
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+}
+
+.main {
+  border-top: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+}
+
+/* Titulo */
+.title-main {
+  margin: 10px;
+}
+
+.parrafo-main {
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ultimos-clientes {
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ultimos-clientes li {
+  list-style: none;
+}
+
+.ultimos-clientes li a {
+  display: block;
+  text-decoration: none;
+}
+
+.div-ultimos-clientes {
+  margin: 10px;
+
+  border: 1px solid #ccc;
+}
+
+
+.aside {
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#aside-line-right {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+.footer {
+  color: white;
+  /* border: 1px solid #ccc; */
+  background-color: rgb(31, 29, 29);
+
+}

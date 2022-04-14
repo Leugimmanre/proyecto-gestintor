@@ -1,0 +1,62 @@
+/* Tarjetas */
+.cards {
+    float: left;
+    width: 250px;
+    height: 320px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px 5px #333;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-title {
+    margin: 2px;
+    padding: 5px;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.cards-imgs {
+    text-align: center;
+    height: 158PX;
+}
+
+.img-cards {
+    width: 100px;
+}
+
+.info {
+    height: 100px;
+    overflow-y: scroll;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-cards {
+    width: 92%;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    background-color: rgb(17, 121, 86);
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-cards:hover {
+    background-color: rgb(11, 70, 50);
+}
+
+.btn-cards:active {
+    background-color: rgb(7, 36, 26);
+}
