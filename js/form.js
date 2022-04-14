@@ -1,6 +1,7 @@
 /* ####### VARIABLES ####### */
 /* Deshabilitar botón submit */
 const btnEnviar = document.querySelector('#enviar');
+const btnLimpiar = document.querySelector('#limpiar');
 //console.log(btnEnviar);
 
 /* Constantes inputs */
@@ -29,6 +30,9 @@ function eventListeners() {
     asunto.addEventListener('blur', validarFormulario);
     correo.addEventListener('blur', validarFormulario);
     mensaje.addEventListener('blur', validarFormulario);
+
+    // Reinicia formulario
+    btnLimpiar.addEventListener('click', resetearFormulario);
 
     // Enviar correo
     formulario.addEventListener('submit', enviarCorreo);
